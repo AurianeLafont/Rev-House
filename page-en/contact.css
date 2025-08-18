@@ -1,0 +1,458 @@
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: "arimo";
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ----- !!! HEADER !!! -----*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #3c3c3c;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+  opacity: 1;
+  overflow: visible;
+}
+
+
+/* Logo à taille normale */
+.header .logo img {
+  width: 70px;
+  height: 90px;
+  transition: all 0.3s ease;
+}
+
+/*
+.logo {
+  top: 0%;
+  flex: 1;
+  padding-bottom: 10px;
+}*/
+
+.nav {
+  display: flex;
+  gap: 100px; /* augmente l'espacement entre chaque menu*/
+  margin-left: 850px; /*permet de décaler le menu vers la gauche*/
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.nav a:hover {
+  color: #b59b76;
+}
+
+.language-selector {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 200;
+}
+
+.lang-menu {
+  position: relative;
+}
+
+.lang-menu button{
+    background-color: #3c3c3c;
+    border: none;
+    
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  background-color: #3c3c3c;
+  padding-right: 10px;
+}
+
+.lang-list {
+  position: absolute;
+  top: 100%; /* colle à 100% du bouton */
+  right: 0;
+  display: none;
+  background: #3c3c3c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #3c3c3c;
+  padding: 10px;
+  list-style: none;
+  z-index: 300;
+}
+
+.lang-list li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.lang-list a:hover {
+    transform: scale (1.2);
+}
+
+.lang-menu:hover .lang-list {
+  display: block;
+}
+
+/* --- HEADER qui réduit en scrollant --- */
+
+/* Header réduit au scroll */
+.header.shrink {
+  padding: 2px 10px;
+}
+
+/* Logo plus petit dans le header réduit */
+.header.shrink .logo img {
+  width: 50px;
+  height: 65px;
+  margin-top: 2px;
+}
+
+/* ----- !!! FOOTER !!! ----- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c3c3c;
+  color: white;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1 1 300px;
+  margin: 10px 0;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.logo {
+  height: 70px;
+}
+
+/* Bloc central - version ligne */
+
+.footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-info {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.footer-center i {
+  margin-right: 5px;
+  color: #b59b76;
+}
+
+.footer-center a{
+  color: white;
+  text-decoration: none;
+}
+
+.separator {
+  margin: 0 30px;
+  color: #aaa;
+}
+
+/* Icônes réseaux sociaux */
+.social-icon {
+  font-size: 24px;
+  color: white;
+  margin-left: 10px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #b59b76;
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-center {
+    flex-direction: column;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    gap: 5px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .footer-right {
+    margin-top: 10px;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* ----- !!! MAIN !!! ----- */
+
+main{
+  display: grid;
+}
+
+.text-block {
+  margin-left: 350px ;
+  margin-bottom: 100px;
+}
+
+.text-block h1{
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-family: "Arimo";
+  font-size: 4.6em;
+  color: #b59b76;
+}
+
+.text-block p{
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.text-block a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* FOMRULAIRE */
+
+.contact-section {
+    max-width: 700px;
+    margin-left: 318px;
+    padding: 30px;
+    margin-bottom: 150px;
+    
+}
+
+.contact-section h2 {
+    text-align: left;
+    margin-bottom: 35px;
+    font-size: 39px;
+    color: #333;
+    margin-top: 60px;
+  
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+    font-size: 20px;
+}
+
+.contact-form .form-group span{
+  font-size: 15px;
+  font-style: italic;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #bd9d62;
+    outline: none;
+}
+
+.contact-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.contact-form select:focus {
+    border-color: #bd9d62;
+    outline: none;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #bd9d62;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e2d0ad;
+}
+
+
+/* ---------------------- */
+/* RESPONSIVE POUR MOBILE */
+/* ---------------------- */
+@media (max-width: 768px) {
+  /* --- HEADER --- */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .header .logo img {
+    width: 50px;
+    height: 65px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .language-selector {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  /* --- MAIN --- */
+  .text-block {
+    margin: 150px 20px 50px 20px; /* marges adaptées au mobile */
+  }
+
+  .text-block h1 {
+    font-size: 2.5em;
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+
+  .text-block p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .contact-section {
+    margin-left: 0;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form label {
+    font-size: 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select,
+  .contact-form button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Pour les écrans très petits (smartphones) */
+@media (max-width: 480px) {
+  .text-block h1 {
+    font-size: 2em;
+  }
+
+  .text-block p {
+    font-size: 14px;
+  }
+
+  .contact-section h2 {
+    font-size: 24px;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .language-selector img {
+    width: 25px;
+    height: 25px;
+  }
+}
