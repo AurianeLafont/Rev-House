@@ -554,22 +554,16 @@ ul li {
   /* --- MAIN --- */
 
   .titre1 h1 {
-    width: 85%;
-    /* occupe 90% de la largeur */
-    margin: -60px auto 40px;
-    /* auto = centre horizontalement */
+    width: 85%; /* occupe 90% de la largeur */
+    margin: -60px auto 40px; /* auto = centre horizontalement */
     padding: 15px 20px;
-    /* réduit un peu le padding */
     font-size: 1.2rem;
   }
 
   .titre-last h1 {
     width: 85%;
-    /* occupe 90% de la largeur */
     margin: -60px auto 40px;
-    /* auto = centre horizontalement */
     padding: 15px 20px;
-    /* réduit un peu le padding */
     font-size: 1.2rem;
   }
 
@@ -577,6 +571,37 @@ ul li {
     width: 94%;
     margin-top: 140px;
     margin-bottom: 140px;
+  }
+
+  /* partie descripton */
+
+  .container-first {
+    flex-direction: column;
+  }
+
+  .icons-column {
+    width: 17%;
+    position: relative;
+    left: -130px;
+  }
+
+  .left-side1 .text-column {
+    font-size: 0.82em;
+    text-align: left;
+    margin-left: -140px;
+    gap: 56px;
+    white-space: nowrap;   /* autorise le retour à la ligne */
+    word-wrap: break-word; /* force le retour à la ligne si un mot est trop long */
+    max-width: 100%;
+  }
+
+  .right-side1 img {
+    width: 350px;
+    height: 220px;
+    max-width: 100%; /* l’image ne dépasse pas l’écran */ 
+    height: auto;
+    position: relative;
+    left: 30px;
   }
 
   /* partie plan */
@@ -599,6 +624,7 @@ ul li {
   ul li {
     margin-left: -30px;
     padding-right: 20px;
+    text-align: left;
   }
 
   .image-last {
