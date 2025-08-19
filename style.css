@@ -208,39 +208,6 @@ body {
   color: #b59b76;
 }
 
-/* Responsive mobile */
-@media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    text-align: center;
-  }
-
-  .footer-center {
-    flex-direction: column;
-  }
-
-  .footer-info {
-    display: flex;
-    flex-direction: column;
-    white-space: normal;
-    gap: 5px;
-  }
-
-  .separator {
-    display: none;
-  }
-
-  .footer-right {
-    margin-top: 10px;
-  }
-}
-
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
@@ -820,7 +787,7 @@ body {
   .bloc-grid {
     grid-template-columns: 1fr;
     margin-left: 40px;
-    width: 70%;
+    width: 80%;
   }
 
    /*Main 4*/
@@ -840,6 +807,11 @@ body {
 
   .main4 .container-port{
     gap: 20px;
+  }
+
+  .slide-wrapper {
+    width: 250px;
+    height: 150px;
   }
 
   
