@@ -666,7 +666,8 @@ body {
 @media (max-width: 768px) {
 
   .hero {
-    width: 80%;
+    width: 800px;
+    height: 1000px;
     max-width: 100%;
   }
 
@@ -764,6 +765,10 @@ body {
 
   /* Main5 */
 
+  .main5{
+    margin-bottom: 90px;
+  }
+
   .main5 h1 {
     width: 85%; /* occupe 90% de la largeur */
     margin: -60px auto 40px; /* auto = centre horizontalement */
@@ -779,7 +784,8 @@ body {
   }
 
   .bloc-video video {
-  width: 100%;
+  width: 330px;
+  height: 330px;
   border-radius: 15px;
   margin-left: -80px;
 }
@@ -812,6 +818,10 @@ body {
   .slide-wrapper {
     width: 250px;
     height: 150px;
+  }
+
+  .main4 {
+    margin-bottom: 80px;
   }
 
   
