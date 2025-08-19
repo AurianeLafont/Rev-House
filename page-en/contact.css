@@ -51,7 +51,7 @@ body {
 .nav {
   display: flex;
   gap: 100px; /* augmente l'espacement entre chaque menu*/
-  margin-left: 850px; /*permet de décaler le menu vers la gauche*/
+  margin-left: 500px; /*permet de décaler le menu vers la gauche*/
 }
 
 .nav a {
@@ -207,38 +207,6 @@ body {
   color: #b59b76;
 }
 
-/* Responsive mobile */
-@media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    text-align: center;
-  }
-
-  .footer-center {
-    flex-direction: column;
-  }
-
-  .footer-info {
-    display: flex;
-    flex-direction: column;
-    white-space: normal;
-    gap: 5px;
-  }
-
-  .separator {
-    display: none;
-  }
-
-  .footer-right {
-    margin-top: 10px;
-  }
-}
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
@@ -248,10 +216,6 @@ body {
 
 
 /* ----- !!! MAIN !!! ----- */
-
-main{
-  display: grid;
-}
 
 .text-block {
   margin-left: 350px ;
@@ -363,11 +327,17 @@ main{
     background-color: #e2d0ad;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /* ---------------------- */
 /* RESPONSIVE POUR MOBILE */
 /* ---------------------- */
 @media (max-width: 768px) {
+
   /* --- HEADER --- */
   .header {
     flex-direction: column;
@@ -380,11 +350,21 @@ main{
     height: 65px;
   }
 
+  .language-selector {
+    margin-left: 15px;
+    position: absolute;
+    top: 19%;
+    left: 83%;
+  }
+
   .nav {
-    flex-direction: column;
+    flex-direction: flex;
     gap: 10px;
     margin-left: 0;
     width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 87px;
   }
 
   .language-selector {
@@ -393,6 +373,7 @@ main{
   }
 
   /* --- MAIN --- */
+  
   .text-block {
     margin: 150px 20px 50px 20px; /* marges adaptées au mobile */
   }
@@ -424,6 +405,14 @@ main{
     font-size: 16px;
   }
 
+  .contact-form input{
+    max-width: 95%;
+  }
+
+   .contact-form textarea{
+    max-width: 95%;
+  }
+
   .contact-form input,
   .contact-form textarea,
   .contact-form select,
@@ -431,9 +420,46 @@ main{
     font-size: 16px;
     padding: 10px;
   }
+
+  /* --- FOOTER --- */
+  
+  .footer {
+    flex-direction: flex;
+    text-align: center;
+  }
+
+  /*
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+  }*/
+
+  .footer-center {
+    flex-direction: column;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    gap: 8px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .footer-right {
+    margin-top: 10px;
+  }
+
+  .footer-left{
+    position: flex;
+    
+  }
 }
 
-/* Pour les écrans très petits (smartphones) */
 @media (max-width: 480px) {
   .text-block h1 {
     font-size: 2em;
@@ -456,3 +482,5 @@ main{
     height: 25px;
   }
 }
+
+
