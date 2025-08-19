@@ -772,7 +772,7 @@ body {
   }
 
    .left-side2{
-    margin-top: -100px;
+    margin-top: -200px;
     text-align: left;
     margin-left: -20px;
   }
@@ -789,9 +789,10 @@ body {
   }
 
    .right-side3{
-    margin-top: -100px;
+    margin-top: -110px;
     text-align: left;
     margin-left: -20px;
+    margin-bottom: -200px;
   }
 
   /* Main5 */
@@ -829,6 +830,8 @@ body {
 
   .main4 h3 {
     font-size: 0.9em;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .main4 .port {
@@ -838,6 +841,8 @@ body {
   .main4 .container-port{
     gap: 20px;
   }
+
+  
 
    /* --- FOOTER --- */
   
