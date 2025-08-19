@@ -51,7 +51,7 @@ body {
 .nav {
   display: flex;
   gap: 100px; /* augmente l'espacement entre chaque menu*/
-  margin-left: 560px; /*permet de décaler le menu vers la gauche*/
+  margin-left: 500px; /*permet de décaler le menu vers la gauche*/
 }
 
 .nav a {
