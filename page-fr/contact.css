@@ -51,7 +51,7 @@ body {
 .nav {
   display: flex;
   gap: 100px; /* augmente l'espacement entre chaque menu*/
-  margin-left: 850px; /*permet de décaler le menu vers la gauche*/
+  margin-left: 560px; /*permet de décaler le menu vers la gauche*/
 }
 
 .nav a {
@@ -460,12 +460,6 @@ body {
   }
 }
 
-
-
-/* ------------------------ */
-/* RESPONSIVE POUR TABLETTE */
-/* ------------------------ */
-
 @media (max-width: 480px) {
   .text-block h1 {
     font-size: 2em;
@@ -488,5 +482,9 @@ body {
     height: 25px;
   }
 }
+
+
+
+
 
  

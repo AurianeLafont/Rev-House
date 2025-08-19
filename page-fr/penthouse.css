@@ -52,7 +52,7 @@ body {
   display: flex;
   gap: 100px;
   /* augmente l'espacement entre chaque menu*/
-  margin-left: 850px;
+  margin-left: 500px;
   /*permet de décaler le menu vers la gauche*/
 }
 
@@ -643,6 +643,14 @@ ul li {
   height: 200px;
 }
 
+  /* partie video */
+
+  .video-pres {
+    width: 10px;
+    height: 50%;
+    max-width: 100%;
+    margin-left: 200px;
+  }
 
   /* partie plan */
 
