@@ -604,6 +604,35 @@ ul li {
     left: 30px;
   }
 
+  /* partie carroussel */
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+.text-block {
+  width: 100%;
+  margin-left: 30px;
+  margin-top: -30px;
+}
+
+.text-block h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #9d875b;
+}
+
+.text-block p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+  .carousel {
+    width: 80%;
+    height: 70%;
+    margin-left: 150px;
+  }
+
   /* partie plan */
 
   .container-last {
