@@ -628,10 +628,21 @@ ul li {
 }
 
   .carousel {
-    width: 80%;
-    height: 70%;
-    margin-left: 150px;
+    width: 94%;
+    height: 100%;
+    margin-left: 190px;
   }
+
+  .carousel-track img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .carousel-track-wrapper {
+  width: 400px;
+  height: 200px;
+}
+
 
   /* partie plan */
 
