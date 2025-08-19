@@ -665,11 +665,12 @@ body {
 /* -------- MOBILES -------- */
 @media (max-width: 768px) {
 
+  /*
   .hero {
     width: 800px;
     height: 1000px;
     max-width: 100%;
-  }
+  }*/
 
   /* Header */
   .header {
@@ -880,5 +881,28 @@ body {
   }
   .port {
     font-size: 24px;
+  }
+}
+
+/* --- Écran Desktop --- */
+@media (min-width: 1025px) {
+  .hero {
+    height: 100vh;       /* prend toute la hauteur de l'écran */
+    object-fit: cover;   /* remplit sans bandes */
+  }
+}
+
+/* --- Tablette --- */
+@media (max-width: 1024px) {
+  .hero {
+    height: 70vh;        /* un peu moins haute */
+  }
+}
+
+/* --- Smartphone --- */
+@media (max-width: 600px) {
+  .hero {
+    height: 50vh;        /* moitié de l'écran */
+    object-fit: cover;   /* toujours recadrée */
   }
 }
