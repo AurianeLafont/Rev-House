@@ -207,38 +207,6 @@ body {
   color: #b59b76;
 }
 
-/* Responsive mobile */
-@media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    text-align: center;
-  }
-
-  .footer-center {
-    flex-direction: column;
-  }
-
-  .footer-info {
-    display: flex;
-    flex-direction: column;
-    white-space: normal;
-    gap: 5px;
-  }
-
-  .separator {
-    display: none;
-  }
-
-  .footer-right {
-    margin-top: 10px;
-  }
-}
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
@@ -359,6 +327,11 @@ body {
     background-color: #e2d0ad;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /* ---------------------- */
 /* RESPONSIVE POUR MOBILE */
@@ -446,6 +419,44 @@ body {
   .contact-form button {
     font-size: 16px;
     padding: 10px;
+  }
+
+  /* --- FOOTER --- */
+  
+  .footer {
+    flex-direction: flex;
+    text-align: center;
+  }
+
+  /*
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+  }*/
+
+  .footer-center {
+    flex-direction: column;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    gap: 8px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .footer-right {
+    margin-top: 10px;
+  }
+
+  .footer-left{
+    position: flex;
+    
   }
 }
 
