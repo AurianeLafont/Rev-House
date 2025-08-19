@@ -364,6 +364,7 @@ body {
 /* RESPONSIVE POUR MOBILE */
 /* ---------------------- */
 @media (max-width: 768px) {
+
   /* --- HEADER --- */
   .header {
     flex-direction: column;
@@ -399,6 +400,7 @@ body {
   }
 
   /* --- MAIN --- */
+  
   .text-block {
     margin: 150px 20px 50px 20px; /* marges adaptées au mobile */
   }
@@ -430,6 +432,14 @@ body {
     font-size: 16px;
   }
 
+  .contact-form input{
+    max-width: 95%;
+  }
+
+   .contact-form textarea{
+    max-width: 95%;
+  }
+
   .contact-form input,
   .contact-form textarea,
   .contact-form select,
@@ -439,7 +449,12 @@ body {
   }
 }
 
-/* Pour les écrans très petits (smartphones) */
+
+
+/* ------------------------ */
+/* RESPONSIVE POUR TABLETTE */
+/* ------------------------ */
+
 @media (max-width: 480px) {
   .text-block h1 {
     font-size: 2em;
