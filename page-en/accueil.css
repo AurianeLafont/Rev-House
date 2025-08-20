@@ -491,7 +491,7 @@ body {
   content: "";
   position: absolute;
   inset: 0; /* top: 0; right: 0; bottom: 0; left: 0 */
-  background-image: url(images/fond-mer1.jpg); /* remplace par ton chemin */
+  background-image: url(../images/fond-mer1.jpg); /* remplace par ton chemin */
   background-size: cover;
   background-position: center;
   opacity: 0.9; /* ✅ opacité visible uniquement sur l’image */
