@@ -518,12 +518,12 @@ ul li {
 @media (max-width: 768px) {
 
   /* --- HEADER --- */
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
+ header {
+  width: 100%;            /* prend seulement la largeur dispo */
+  max-width: 100vw;       /* ne dépasse jamais la largeur de l'écran */
+  overflow-x: hidden;     /* empêche tout débordement horizontal */
+  box-sizing: border-box; /* calcule la largeur en incluant padding + border */
+}
   .header .logo img {
     width: 50px;
     height: 65px;
@@ -552,6 +552,13 @@ ul li {
   }
 
   /* --- MAIN --- */
+
+  .container-first .container-second .container-last {
+    width: 100%;            /* prend seulement la largeur dispo */
+    max-width: 100vw;       /* ne dépasse jamais la largeur de l'écran */
+    overflow-x: hidden;     /* empêche tout débordement horizontal */
+    box-sizing: border-box; /* calcule la largeur en incluant padding + border */
+  }
 
   .titre1 h1 {
     width: 85%; /* occupe 90% de la largeur */
